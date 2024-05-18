@@ -66,6 +66,10 @@ void list_making() {
 
   head = one;
   print_list(head);
+
+  free(head);
+  free(two);
+  free(three);
 }
 
 void print_list(struct todo *ptr) {
